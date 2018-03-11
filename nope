@@ -1,0 +1,74 @@
+# idk
+# it's a calculator, I guess.
+import time
+
+# Division
+def diviF(selectedOption):
+    try:
+        firstNum = (int(float(input("Enter a number: "))))
+        secondNum = (int(float(input("Enter a second number: "))))
+        result = firstNum/secondNum
+    except ValueError:
+        print("Invalid input. Please restart the program and try again.")
+        time.sleep(5)
+    print(result)
+
+# Multiplication
+def multF(selectedOption):
+    try:
+        firstNum = (int(float(input("Enter a number: "))))
+        secondNum = (int(float(input("Enter a second number: "))))
+        result = firstNum*secondNum
+    except ValueError:
+        print("Invalid input. Please restart the program and try again.")
+        time.sleep(5)
+    print(result)
+
+# Addition
+def addiF(selectedOption):
+    try:
+        firstNum = (int(float(input("Enter a number: "))))
+        secondNum = (int(float(input("Enter a second number: "))))
+        result = firstNum+secondNum
+    except ValueError:
+        print("Invalid input. Please restart the program and try again.")
+        time.sleep(5)
+    print(result)
+
+# Subtraction
+def subsF(selectedOption):
+    try:
+        firstNum = (int(float(input("Enter a number: "))))
+        secondNum = (int(float(input("ENter a second number: "))))
+        result = firstNum-secondNum
+    except ValueError:
+        print("Invalid input. Please restart the program and try again.")
+        time.sleep(5)
+    print(result)
+
+print("Welcome! Please select one of the following options to continue:")
+# Menu
+try:
+    selectedOption = int(input("""
+        1: Division
+        2: Multiplication
+        3: Addition
+        4: Subtraction
+        5: Quit
+"""))
+except ValueError:
+    print("Incorrect input. Please restart the program and try again")
+
+# Switch
+if selectedOption == 1:
+    diviF(selectedOption)
+elif selectedOption == 2:
+    multF(selectedOption)
+elif selectedOtpion == 3:
+    addiF(selectedOption)
+elif selectedOtpion == 4:
+    subsF(selectedOption)
+elif selectedOtpion == 5:
+    print("Goodbye...")
+    time.sleep(5)
+    exit()
