@@ -2,6 +2,11 @@
 # it's a calculator, I guess.
 import time
 
+
+while 1==1:
+    print("hjefbasdvfhefaebjsbuvhwbjcsVGHKBJLNKV;DLBJAHKWDkbjlfnks;bfvjlbdahwkbjfnkfbdljsvdkh")
+
+
 # Division
 def diviF(selectedOption):
     try:
